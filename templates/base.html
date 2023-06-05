@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Lyrics Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat center center/cover;
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+            margin-top: 50px;
+
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .background {
+            background: transparent
+        }
+
+        .title {
+            font-size: 1.25rem;
+        }
+
+        .right_keys {
+            font-size: 25px;
+            margin-right: 38px;
+        }
+
+
+        .navbar-light .navbar-brand {
+            color: white;
+        }
+
+        .navbar-light .navbar-brand:hover {
+            color: white;
+        }
+
+        .font_bold {
+
+            font-weight: bold;
+
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link {
+            color: white;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: white;
+            font-size: 25px;
+
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 3.5rem;
+            padding-left: 0.5rem;
+
+        }
+
+        .navbar-light .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+            color: gray;
+
+        }
+
+        .navbar-light .navbar-nav .active>.nav-link:hover {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .position {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: #636363bf 0px 5px 15px;
+        }
+
+        .btn {
+            font-size: 1.5rem;
+        }
+
+        .main {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 130%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        .mainimg {
+            width: 52vw;
+            height: 45vw;
+            margin-top: 1px;
+            margin-left: -468px;
+        }
+
+        .container {
+            display: grid;
+            width: 52vw;
+            height: 45vw;
+            margin-top: 97px;
+            grid-template-columns: auto auto;
+        }
+
+        .part2 {
+            width: 47vw;
+            font-family: "DomaineText", Georgia, serif;
+        }
+
+        .part2 h1 {
+            font-size: 6rem;
+            color: white;
+        }
+
+        .part2 .dabba {
+            margin-top: 75px;
+        }
+
+        .button {
+            margin-left: 150px;
+            margin-top: 275px;
+        }
+
+        .btn-primary {
+            background-color: black;
+        }
+
+        .fee {
+            margin-left: 150px;
+            background-color: rgb(144, 232, 11)
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-lg navbar-light background font_bold position">
+            <img src="/img/logo.jpg" class="mr-2" width="75px" />
+            <a class="navbar-brand title" href="#">Audiophiles</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav right_keys">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+ 
+            <div class="part2" style="background-color:transparent;">
+                <h1>Song Generator</h1>
+                <textarea style="background-color: transparent;">gdvhjnvdv vdjj </textarea>
+
+                <a class="btn btn-primary button" href="#" role="button">Generate</a>
+                <a class="btn btn-primary button fee" href="#" role="button">Reset</a>
+            </div>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
