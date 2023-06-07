@@ -11,24 +11,6 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     return render_template("index.html")
-    # temp = "1685844724"
-
-    # return render_template('result.html', vocal_loc="../../1685844724-freestyle.mp3")
-
-
-
-# @app.route('/process-form', methods=['POST'])
-# def process_form():
-#     print("Submit Button Clicked")
-#     user_input = request.form.get('user_input')
-#     dropdown_menu = request.form.get('dropdown_menu')
-#     print(type(user_input))
-#     # Call your Python function with user input and dropdown value
-#     result_json = promt_to_lyrics(user_input)
-#     vocal_production(lyrics = result_json["lyrics"][:125], uuid=dropdown_menu, bpm=result_json["bpm"])
-
-#     # Pass the result to the render_template
-#     return render_template('result.html')
 
 @app.route('/process_form', methods=['POST'])
 def process_form():
