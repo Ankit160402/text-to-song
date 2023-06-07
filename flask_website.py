@@ -21,7 +21,7 @@ def process_form():
     print(user_input)
     print(dropdown_menu)
     unique = str(int(datetime.datetime.now().timestamp()))
-    # Call your Python function with user input and dropdown value
+
     if type(user_input) is str and type(dropdown_menu) is str:
         result_json = promt_to_lyrics(user_input)
         vocal_url = vocal_production(lyrics = result_json["lyrics"][0], uuid=dropdown_menu, bpm=result_json["bpm"], unique_identifier=unique)
