@@ -18,13 +18,12 @@ def vocal_production(lyrics, uuid, bpm, unique_identifier):
     
     sleep(5)
     for t in range(10):
-        sleep(2) # check status every second for 10 seconds.
+        sleep(2) # check status every second for 2 seconds 10 times.
         output = requests.get(
             "https://api.uberduck.ai/speak-status",
             params=dict(uuid=audio_uuid),
             auth=uberduck_auth,
         ).json()
-        # print(output)
         if "path" in output:
             if output["path"] != None:
                 audio_url = output["path"]
