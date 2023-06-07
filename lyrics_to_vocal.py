@@ -15,10 +15,7 @@ def vocal_production(lyrics, uuid, bpm, unique_identifier):
         json=dict(speech=lyrics[:250], voicemodel_uuid=uuid, bpm=bpm),
         auth=uberduck_auth,
     ).json()["uuid"]
-
-    # print("voics generated succesfully")
-    # print(audio_uuid)
-    # print("Sleeping for 5s \n")
+    
     sleep(5)
     for t in range(10):
         sleep(2) # check status every second for 10 seconds.
@@ -33,15 +30,9 @@ def vocal_production(lyrics, uuid, bpm, unique_identifier):
                 audio_url = output["path"]
                 print(audio_url)
                 break
-
-
-    # print("sleeping for 5s\n")
-
     sleep(5)
     return audio_url
 
-
-    # print("making Audio file\n")
     with open(file_path, "wb") as file:
         file.write(response.content)
 
